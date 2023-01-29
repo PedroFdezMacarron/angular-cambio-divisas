@@ -11,20 +11,26 @@ import {
   styleUrls: ['./gallery.component.scss'],
 })
 export class GalleryComponent implements OnInit {
+ 
+  miobjeto: ObjetoDivisas = this.divisasService.objetoDivisa;
+
   constructor(private divisasService: DivisasService) {}
 
-  miobjeto: ObjetoDivisas = {
-    base: '',
-    date: '',
-    amount: 0,
-    divisas: [],
-  };
+  // miobjeto: ObjetoDivisas = {
+  //   base: '',
+  //   date: '',
+  //   amount: 0,
+  //   divisas: [],
+  // };
+
+ 
 
   lares: any;  // la res puesta
   amount?: Amount; // para indicar el importe a convertir
 
+  
   ngOnInit() {
-    console.log('oninit de gallery');
+    // console.log('oninit de gallery');
 
     // recuperar de servicio el amount
     // this.miobjeto = this.divisasService.objetoDivisa;
@@ -35,10 +41,13 @@ export class GalleryComponent implements OnInit {
       .getDivisas('https://api.vatcomply.com/rates?base=EUR')
       .subscribe((res: any) => {
         this.lares = res;
-        console.log('mostrar lares');
-        console.log(this.lares);
+        // console.log('mostrar lares');
+        // console.log(this.lares);
+
         // asignamos base y fecha y amount
         this.divisasService.setObjDivisas(this.lares);
+
+        // recuperamos la información
         this.miobjeto = this.divisasService.getObjeto();
       });
   }
@@ -49,8 +58,9 @@ export class GalleryComponent implements OnInit {
       .getDivisas('https://api.vatcomply.com/rates?base=' + newDivisa)
       .subscribe((res: any) => {
         this.lares = res;
-        console.log('mostrar lares');
-        console.log(this.lares);
+        // console.log('mostrar lares');
+        // console.log(this.lares);
+
         // asignamos base y fecha y amount
         this.divisasService.setObjDivisas(this.lares);
         this.miobjeto = this.divisasService.getObjeto();

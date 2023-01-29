@@ -26,13 +26,15 @@ export class DivisasService {
 
   constructor(private httpClient1: HttpClient) {}
 
+
+
   getObjeto() {
     return this.objetoDivisa;
   }
 
   setObjDivisas(lares: any) {
-    console.log('set Objdivisas 2');
-    console.log(lares);
+    // console.log('set Objdivisas 2');
+    // console.log(lares);
 
     // asignamos base y fecha y amount y limpiamos array
     this.objetoDivisa = {
@@ -42,7 +44,7 @@ export class DivisasService {
       divisas: [],
     };
 
-    console.log('cargamos array', lares.rates);
+    // console.log('cargamos array', lares.rates);
 
     // cargamos el array
     for (const key in lares.rates) {
@@ -52,11 +54,11 @@ export class DivisasService {
         change: lares.rates[key] * this.objetoDivisa.amount,
       });
     }
-    console.log(this.objetoDivisa.divisas);
+    // console.log(this.objetoDivisa.divisas);
   }
 
   getDivisas(url: string) {
-    console.log('get', url);
+    // console.log('get', url);
     this.setObjDivisas(this.httpClient1.get(url));
 
     return this.httpClient1.get(url);
