@@ -10,5 +10,17 @@
         font-size: 20px;
         font-weight: 700;
         text-decoration: none;color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
+    &--menu:hover{
+        background-color: white;
+        color: cadetblue;
+        border: 1px solid white;
+
+    }
+
+
 }
