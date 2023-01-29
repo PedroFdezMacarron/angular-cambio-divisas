@@ -1,0 +1,23 @@
+.gallery {
+  width: 80%;
+  margin: 0px auto;
+}
+.info {
+  font-size: 15px;
+  font-weight: 600;
+  padding: 30px;
+  text-align: center;
+}
+.btn {
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 5px;
+  width: 50%;
+}
+.table {
+  width: 80%;
+  margin: 0px auto;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 150px 150px 150px;
+}

@@ -1,0 +1,62 @@
+.home {
+    background: #CCCCCC;
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   margin: 0px auto;
+}
+.home-card{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 80%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 20px auto;
+    padding: 30px;
+}
+
+.home-title {
+/* Titulo */ 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+    background: #FFFFFF;
+    height: 48px;
+    text-align: center;    
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;    
+    color: rgba(0, 0, 0, 0.87);   
+
+    &-ht1{
+        font-style:normal;
+        padding-right: 10px;
+    } 
+    &-ht2{
+        font-style: italic;
+    } 
+}
+.home-subtitle{
+
+    background: #FFFFFF;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;  
+}
+
+
+.home-body{
+
+    background: #FFFFFF;
+    /* Texto */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;       
+    border-radius: nullpx;    
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    letter-spacing: 0.0275em;
+    color: #19191D;
+}

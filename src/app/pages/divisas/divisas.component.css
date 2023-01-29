@@ -1,0 +1,16 @@
+.divisas {
+  display: flex;
+  flex-direction: column;
+}
+.divisas--header {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+}
+.divisas--body {
+  display: flex;
+  flex-direction: column;
+}
+.divisas--body-data {
+  margin: 0px auto;
+}/*# sourceMappingURL=divisas.component.css.map */

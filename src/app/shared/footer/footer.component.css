@@ -1,0 +1,17 @@
+.footer {
+  height: 150px;
+  background: #333333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.foottexto {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  letter-spacing: 0.018em;
+  color: #FFFFFF;
+}/*# sourceMappingURL=footer.component.css.map */

@@ -1,0 +1,20 @@
+<div class="gallery">
+    <div class="info">
+        base:{{miobjeto.base}} date:{{miobjeto.date}} amount:{{miobjeto.amount}}
+    </div>
+    <ng-container  *ngFor="let item of miobjeto.divisas" >
+        <div class="table">
+            <div (click)="otraDivisa(item.divisa)" class="btn">            
+                divisa:{{item.divisa}}   
+            </div>
+            <div>
+                ratio:{{item.rate| number : '1.4-4'}} 
+            </div>
+            <div>
+                cambio:{{item.change| number : '1.2-2'}}
+            </div>
+        </div> 
+    </ng-container>
+</div>
+
+

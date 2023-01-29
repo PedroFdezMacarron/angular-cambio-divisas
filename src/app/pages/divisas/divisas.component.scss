@@ -1,0 +1,16 @@
+.divisas{
+    display: flex;
+    flex-direction: column;
+    &--header{
+        font-size: 20px;
+        text-align: center;
+        padding: 20px;
+    }
+    &--body{
+        display: flex;
+        flex-direction: column;
+        &-data{
+            margin: 0px auto;
+        }
+    }
+}
